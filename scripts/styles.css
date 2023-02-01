@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* Propiedades */
+:root {
+    /*Colores*/
+    --color-primary: #188cff;
+    --color-secondary: #464653;
+    --color-tertiary : #171724;
+    /*Propiedades*/
+    
+}
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    border: none;
+}
+/* Estilos Generales de Bloque */
+.fill{
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+}
+.ligth{
+    background-color: transparent;
+    border: 0.18rem solid var(--color-primary);
+    border-radius: 5px;
+}
+/* Estilos Generales del Main */
+.main{
+    background-color: #252534;
+    width: 100vw;
+}
+.main__wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+.main__title{
+    margin-top: 3rem;
+    position: relative;
+
+    font-size: 2rem;
+}
+.main__subtitle{
+    position: absolute;
+    bottom: 0.3rem;
+    right: -4.7rem;
+
+    font-size: 0.8rem;
+}
+.main__summary{
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(207, 207, 207);
+}
+.main__anchor{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+/* Estilos Generales del Entries */
+.entries{
+    width: 70%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.entries__title{
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    color: var(--color-primary);
+}
+.entries__area-box{
+    padding: 2rem;
+    min-height: 30rem;
+
+    border-bottom: 0.35rem solid var(--color-tertiary);
+    border-left: 0.35rem solid var(--color-tertiary);
+    border-radius: 10px;
+
+    background-color: var(--color-secondary);
+
+    display: flex;
+}
+.entries__area{
+    width: 100%;
+
+    background-color: transparent;
+    border:  none;
+    resize: none;
+
+    color: inherit;
+}
+.entries__warning{
+    align-self: center;
+
+    color: red;
+    font-size: 0.8rem;
+}
+.entries__button-box{
+    align-self: center;
+
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.entries__button{
+    flex: 1 0 auto;
+
+    padding: 0.8rem 0;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    color: inherit;
+
+    cursor: pointer;
+
+    transition: transform 0.1s linear;
+}
+.entries__button:hover{
+    transform: scale(1.02);
+}
+.entries__button:active{
+    transform: scale(0.93);
+}
+/* Estilos del Results */
+.results{
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    border: 2px solid var(--color-secondary);
+    border-radius: 10px;
+    background-color: var(--color-tertiary);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.results__title{
+    font-size: 1.3rem;
+}
+.results__empty{
+    color: rgba(206, 206, 206, 0.582);
+}
+hr{
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+}
+.table{
+    display: none;
+}
+.table-header{
+    background-color: rgb(255, 255, 255) !important;
+
+    position: sticky;
+    top: 0;
+}
+.table-header-element{
+    color: black;
+    padding: 0.3rem 0 !important;
+}
+.table > div:nth-child(odd){
+    background-color: var(--color-primary);
+    color: white;
+}
+.table__row{
+    display: flex;
+}
+.table__element{
+    width: 20%;
+    padding: 1rem 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 0.9rem;
+}

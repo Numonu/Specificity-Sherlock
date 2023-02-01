@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/65a19dc040.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="scripts/styles.css">
+    <title>Specificity Sherlock</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__wrapper">
+            <h1 class="main__title">Specificity Sherlock <span class="main__subtitle">by Numonu</span></h1>
+            <p class="main__summary">
+                Encuentra y ordena selectores de CSS de manera rápida y eficiente. Se basa en el módulo de <a class="main__anchor" href="https://github.com/keeganstreet/specificity">calculo de especificidad</a> hecho por <a class="main__anchor" href="https://github.com/keeganstreet">Keeganstreet</a> por lo tanto se mantienen las mismas concideraciones al leer selectores
+            </p>
+            <section class="entries">
+                <h1 class="entries__title">Pegue su codigo CSS aqui : </h1>
+                <div class="entries__area-box">
+                    <textarea class="entries__area" id="user-input" placeholder="Nada por aqui..." required></textarea>
+                </div>
+                <div class="entries__button-box">
+                    <button class="entries__button fill" id="calculate-button">Calcular</button>
+                    <button class="entries__button ligth" id="clear-button">Limpiar</button>
+                </div>
+                <span class="entries__warning"><i class="fa-solid fa-triangle-exclamation"></i> Incluir Media Queries
+                    ocaciona errores!</span>
+            </section>
+            <section class="results">
+                <h1 class="results__title">Resultados del Analisis</h1>
+                <hr>
+                <p class="results__empty" id="results-empty">Nada por aqui...</p>
+                <div class="table" id="table">
+                    <div class="table__row table-header" style="font-weight: bold;">
+                        <div class="table__element table-header-element">Selector</div>
+                        <div class="table__element table-header-element">IDs</div>
+                        <div class="table__element table-header-element">Clases y pseudoclases</div>
+                        <div class="table__element table-header-element">Elementos y pseudoelementos</div>
+                        <div class="table__element table-header-element">Total</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
